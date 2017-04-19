@@ -1,0 +1,2269 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/randdusing/cordova-plugin-bluetoothle#readme">cordova-plugin-bluetoothle (v4.3.2)</a>
+</h1>
+<h4>Use the Bluetooth Low Energy plugin to connect your Cordova app to new Bluetooth devices like heart rate monitors, thermometers, etc...</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-plugin-bluetoothle">module cordova-plugin-bluetoothle</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.</span>bluetoothle</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-plugin-bluetoothle.bluetoothle">module cordova-plugin-bluetoothle.bluetoothle</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.addService">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>addService
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bond">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>bond
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bytesToEncodedString">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>bytesToEncodedString
+            <span class="apidocSignatureSpan">(bytes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bytesToHex">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>bytesToHex
+            <span class="apidocSignatureSpan">(bytes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bytesToString">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>bytesToString
+            <span class="apidocSignatureSpan">(bytes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.characteristics">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>characteristics
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.close">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>close
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.connect">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>connect
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.descriptors">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>descriptors
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.disable">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>disable
+            <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.disconnect">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>disconnect
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.discover">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>discover
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.enable">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>enable
+            <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.encodedStringToBytes">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>encodedStringToBytes
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.hasPermission">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>hasPermission
+            <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.initialize">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>initialize
+            <span class="apidocSignatureSpan">(successCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.initializePeripheral">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>initializePeripheral
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isAdvertising">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isAdvertising
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isBonded">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isBonded
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isConnected">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isConnected
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isDiscovered">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isDiscovered
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isEnabled">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isEnabled
+            <span class="apidocSignatureSpan">(successCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isInitialized">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isInitialized
+            <span class="apidocSignatureSpan">(successCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isLocationEnabled">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isLocationEnabled
+            <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isScanning">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isScanning
+            <span class="apidocSignatureSpan">(successCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.mtu">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>mtu
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.notify">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>notify
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.read">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>read
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.readDescriptor">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>readDescriptor
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.reconnect">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>reconnect
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.removeAllServices">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>removeAllServices
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.removeService">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>removeService
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.requestConnectionPriority">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>requestConnectionPriority
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.requestLocation">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>requestLocation
+            <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.requestPermission">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>requestPermission
+            <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.respond">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>respond
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.retrieveConnected">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>retrieveConnected
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.rssi">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>rssi
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.services">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>services
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.startAdvertising">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>startAdvertising
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.startScan">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>startScan
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.stopAdvertising">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>stopAdvertising
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.stopScan">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>stopScan
+            <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.stringToBytes">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>stringToBytes
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.subscribe">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>subscribe
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.unbond">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>unbond
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.unsubscribe">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>unsubscribe
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.wasConnected">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>wasConnected
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.write">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>write
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.writeDescriptor">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>writeDescriptor
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.writeQ">
+            function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>writeQ
+            <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>CALLBACK_TYPE_ALL_MATCHES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>CALLBACK_TYPE_FIRST_MATCH</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>CALLBACK_TYPE_MATCH_LOST</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>MATCH_MODE_AGGRESSIVE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>MATCH_MODE_STICKY</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>MATCH_NUM_FEW_ADVERTISEMENT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>MATCH_NUM_MAX_ADVERTISEMENT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>MATCH_NUM_ONE_ADVERTISEMENT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>SCAN_MODE_BALANCED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>SCAN_MODE_LOW_LATENCY</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>SCAN_MODE_LOW_POWER</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>SCAN_MODE_OPPORTUNISTIC</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-plugin-bluetoothle" id="apidoc.module.cordova-plugin-bluetoothle">module cordova-plugin-bluetoothle</a></h1>
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-plugin-bluetoothle.bluetoothle" id="apidoc.module.cordova-plugin-bluetoothle.bluetoothle">module cordova-plugin-bluetoothle.bluetoothle</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.addService" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.addService">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>addService
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addService = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "addService", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### addService ###
+Add a service with characteristics and descriptors. If more than one service is added, add them sequentially.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">addService</span>(success, error, params);
+```
+
+##### Params #####
+* service = A service UUID.
+* characteristics = An object of characteristics data as shown below.
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bond" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bond">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>bond
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bond = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "bond", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### bond ###
+Bond with a device. The first success callback should always return with ```status == bonding```. If the bond is created, the callback
+ will return again with ```status == bonded```. If the bonding popup is canceled or the wrong code is entered, the callback will
+ return again with ```status == unbonded```. The device doesn't need to be connected to initiate bonding. Android support only
+.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">bond</span>(bondSuccess, bondError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bytesToEncodedString" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bytesToEncodedString">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>bytesToEncodedString
+        <span class="apidocSignatureSpan">(bytes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bytesToEncodedString = function (bytes) {
+  return btoa(String.fromCharCode.apply(null, bytes));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* service = The service's UUID
+* characteristic = The characteristic's UUID
+* value = Base64 encoded string
+* type = Set to "noResponse" to enable write without response, all other values will write normally.
+
+Value is a base64 encoded string of bytes to write. Use bluetoothle.<span class="apidocCodeKeywordSpan">bytesToEncodedString</span>(bytes) to convert to base64 encoded string from a unit8Array.
+To write without response, set type to "noResponse". Any other value will default to write with response. Note, no callback
+ will occur on write without response on iOS.
+```javascript
+var string = "Write Hello World";
+var bytes = bluetoothle.stringToBytes(string);
+var encodedString = bluetoothle.bytesToEncodedString(bytes);
+
+//Note, this example doesn't actually work since it's read only characteristic
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bytesToHex" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bytesToHex">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>bytesToHex
+        <span class="apidocSignatureSpan">(bytes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bytesToHex = function (bytes) {
+  var string = [];
+  for (var i = 0; i &lt; bytes.length; i++) {
+    string.push("0x" + ("0"+(bytes[i].toString(16))).substr(-2).toUpperCase());
+  }
+  return string.join(" ");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bytesToString" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.bytesToString">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>bytesToString
+        <span class="apidocSignatureSpan">(bytes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bytesToString = function (bytes) {
+  return String.fromCharCode.apply(null, new Uint16Array(bytes));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+##### Success #####
+Value is a base64 encoded string of written bytes. Use bluetoothle.encodedStringToBytes(obj.value) to convert to a unit8Array. See
+ characteristic's specification and example below on how to correctly parse this.
+
+```javascript
+var returnObj = {"status":"written","service":"180F","characteristic":"2A19
+","value":"V3JpdGUgSGVsbG8gV29ybGQ=","address":"ABC123"}
+var bytes = bluetoothle.encodedStringToBytes(returnObj.value);
+var string = bluetoothle.<span class="apidocCodeKeywordSpan">bytesToString</span>(bytes); //This should equal Write Hello World
+```
+
+
+
+### writeQ ###
+Write Quick / Queue, use this method to quickly execute write without response commands when writing more than 20 bytes at a time
+. The data will automatically be split up into 20 bytes packets. On iOS, these packets are written immediately since iOS uses queues
+. You probably won't see much of a performance increase using writeQ. On Android, a queue isn't used internally. Instead
+ another call shouldn't be made until onCharacteristicWrite is called. This could be done at the Javascript layer, but the
+Javascript to plugin "bridge" must be crossed twice, which leads to some significant slow downs when milliseconds make
+ a difference. For even better write throughput, use requestConnectionPriority('high') as well. Note, no callback will
+ occur on write without response on iOS.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.characteristics" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.characteristics">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>characteristics
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">characteristics = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "characteristics", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### characteristics ###
+Discover the service's characteristics. Not providing an array of characteristics will return all characteristics and take
+longer to discover. iOS support only.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">characteristics</span>(characteristicsSuccess, characteristicsError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* service = Service UUID
+* characteristics = An array of characteristic IDs to discover or empty array / null
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.close" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.close">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>close
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">close = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "close", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+### close ###
+Close/dispose a Bluetooth LE device. Prior to 2.7.0, you needed to disconnect to the device before closing, but this is no longer
+ the case.
+**Starting with iOS 10, disconnecting before closing seems required!**
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">close</span>(closeSuccess, closeError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.connect" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.connect">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>connect
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">connect = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "connect", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### connect ###
+Connect to a Bluetooth LE device. The app should use a timer to limit the connecting time in case connecting is never successful
+. Once a device is connected, it may disconnect without user intervention. The original connection callback will be called again
+ and receive an object with status =&gt; disconnected. To reconnect to the device, use the reconnect method. If a timeout occurs
+, the connection attempt should be canceled using disconnect(). For simplicity, I recommend just using connect() and close(), don
+'t use reconnect() or disconnect().
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">connect</span>(connectSuccess, connectError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* autoConnect = Automatically connect as soon as the remote device becomes available (Android)
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.descriptors" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.descriptors">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>descriptors
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">descriptors = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "descriptors", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### descriptors ###
+Discover the characteristic's descriptors. iOS support only.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">descriptors</span>(descriptorsSuccess, descriptorsError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* service = The service's ID
+* characteristic = The characteristic's ID
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.disable" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.disable">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>disable
+        <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disable = function (successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "disable", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### disable ###
+Disable Bluetooth on the device. Android support only.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">disable</span>(disableSuccess, disableError);
+```
+
+##### Error #####
+* errorEnable = Bluetooth isn't enabled, so unable to disable.
+* errorDisable = Immediate failure of the internal disable() function due to Bluetooth already off, so unable to enable. This shouldn
+'t occur since the plugin is already checking this condition anyways.
+
+##### Success #####
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.disconnect" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.disconnect">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>disconnect
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disconnect = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "disconnect", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+### disconnect ###
+Disconnect from a Bluetooth LE device. It's simpler to just call close().
+**Starting with iOS 10, disconnecting before closing seems required!**
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">disconnect</span>(disconnectSuccess, disconnectError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.discover" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.discover">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>discover
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">discover = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "discover", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### discover ###
+Discover all the devices services, characteristics and descriptors. Doesn't need to be called again after disconnecting and
+ then reconnecting. If using iOS, you shouldn't use discover and services/characteristics/descriptors on the same device. There
+ seems to be an issue with calling discover on iOS8 devices, so use with caution. On some Android versions, the discovered services
+ may be cached for a device.  Subsequent discover events will make use of this cache.  If your device's services change, set
+ the clearCache parameter to force Android to re-discover services.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">discover</span>(discoverSuccess, discoverError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* clearCache = true / false (default) Force the device to re-discover services, instead of relying on cache from previous discovery
+ (Android only)
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.enable" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.enable">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>enable
+        <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">enable = function (successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "enable", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### enable ###
+Enable Bluetooth on the device. Android support only.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">enable</span>(enableSuccess, enableError);
+```
+
+##### Error #####
+* errorDisable = Bluetooth isn't disabled, so unable to enable.
+* errorEnable = Immediate failure of the internal enable() function due to Bluetooth already on or airplane mode, so unable to enable
+.
+
+##### Success #####
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.encodedStringToBytes" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.encodedStringToBytes">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>encodedStringToBytes
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encodedStringToBytes = function (string) {
+  var data = atob(string);
+  var bytes = new Uint8Array(data.length);
+  for (var i = 0; i &lt; bytes.length; i++)
+  {
+    bytes[i] = data.charCodeAt(i);
+  }
+  return bytes;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+##### Success #####
+* status =&gt; scanStarted = Scan has started
+* status =&gt; scanResult = Scan has found a device
+  * name = the device's display name
+  * address = the device's address / identifier for connecting to the object
+  * rssi = signal strength
+  * advertisement = advertisement data in encoded string of bytes, use bluetoothle.<span class="apidocCodeKeywordSpan">encodedStringToBytes
+</span>() (Android)
+  * advertisement = advertisement hash with the keys specified [here](https://developer.apple.com/library/ios/documentation/CoreBluetooth
+/Reference/CBCentralManagerDelegate_Protocol/#//apple_ref/doc/constant_group/Advertisement_Data_Retrieval_Keys) (iOS)
+  * advertisement = empty (Windows)
+
+```javascript
+{
+  "status": "scanStarted"
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.hasPermission" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.hasPermission">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>hasPermission
+        <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasPermission = function (successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "hasPermission", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### hasPermission ###
+Determine whether coarse location privileges are granted since scanning for unpaired devices requies it in Android API 23
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">hasPermission</span>(hasPermissionSuccess);
+```
+
+##### Success #####
+* status =&gt; hasPermission = true/false
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.initialize" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.initialize">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>initialize
+        <span class="apidocSignatureSpan">(successCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialize = function (successCallback, params) {
+  cordova.exec(successCallback, successCallback, bluetoothleName, "initialize", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### initialize ###
+Initialize Bluetooth on the device. Must be called before anything else. Callback will continuously be used whenever Bluetooth is
+ enabled or disabled. Note: Although Bluetooth initialization could initially be successful, there's no guarantee whether it
+ will stay enabled. Each call checks whether Bluetooth is disabled. If it becomes disabled, the user must connect to the device,
+start a read/write operation, etc again. If Bluetooth is disabled, you can request the user to enable it by setting the request
+property to true. The `request` property in the `params` argument is optional and defaults to false. The `restoreKey` property requires
+ using the Bluetooth Central background mode. This function should only be called once.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">initialize</span>(initializeResult, params);
+```
+
+##### Params #####
+* request = true / false (default) - Should user be prompted to enable Bluetooth
+* statusReceiver = true (default) / false - Should change in Bluetooth status notifications be sent.
+* restoreKey = A unique string to identify your app. Bluetooth Central background mode is required to use this, but background mode
+ doesn't seem to require specifying the restoreKey.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.initializePeripheral" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.initializePeripheral">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>initializePeripheral
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initializePeripheral = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "initializePeripheral", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### initializePeripheral ###
+Initialize Bluetooth on the device. Must be called before anything else. Callback will continuously be used whenever Bluetooth is
+ enabled or disabled. Note: Although Bluetooth initialization could initially be successful, there's no guarantee whether it
+ will stay enabled. Each call checks whether Bluetooth is disabled. If it becomes disabled, the user must readd services, start
+advertising, etc again. If Bluetooth is disabled, you can request the user to enable it by setting the request property to true.
+The `request` property in the `params` argument is optional and defaults to false. The `restoreKey` property requires using the
+Bluetooth Peripheral background mode. This function should only be called once.
+
+Additionally this where new events are delivered for read, write, and subscription requests. See the success section for more details
+.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">initializePeripheral</span>(success, error, params);
+```
+
+##### Params #####
+* request = true / false (default) - Should user be prompted to enable Bluetooth
+* restoreKey = A unique string to identify your app.  Bluetooth Peripheral background mode is required to use this, but background
+ mode doesn't seem to require specifying the restoreKey.
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isAdvertising" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isAdvertising">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isAdvertising
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isAdvertising = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "isAdvertising", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+
+### isAdvertising ###
+Determine if app is advertising or not.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">isAdvertising</span>(success, error);
+```
+
+
+##### Return #####
+```javascript
+{
+"isAdvertising":true
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isBonded" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isBonded">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isBonded
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isBonded = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "isBonded", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### isBonded ###
+Determine whether the device is bonded or not, or error if not initialized. Android support only.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">isBonded</span>(isBondedSuccess, isBondedError, params);
+```
+
+#### Params ####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isConnected" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isConnected">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isConnected
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isConnected = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "isConnected", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### isConnected ###
+Determine whether the device is connected, or error if not initialized or never connected to device.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">isConnected</span>(isConnectedSuccess, isConnectedError, params);
+```
+
+#### Params ####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isDiscovered" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isDiscovered">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isDiscovered
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isDiscovered = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "isDiscovered", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### isDiscovered ###
+Determine whether the device's characteristics and descriptors have been discovered, or error if not initialized or not connected
+ to device. Note, on Android, you can connect, discover and then disconnect. isDiscovered will return an error due to the device
+ not being connected. But if you call reconnect and call isDiscovered again, it will return isDiscovered =&gt; true since the
+device stays discovered until calling close().
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">isDiscovered</span>(isDiscoveredSuccess, isDiscoveredError, params);
+```
+
+#### Params ####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isEnabled" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isEnabled">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isEnabled
+        <span class="apidocSignatureSpan">(successCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isEnabled = function (successCallback) {
+  cordova.exec(successCallback, successCallback, bluetoothleName, "isEnabled", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+
+### isEnabled ###
+Determine whether the adapter is enabled. No error callback
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">isEnabled</span>(isEnabled);
+```
+
+##### Success #####
+* status =&gt; isEnabled = true/false
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isInitialized" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isInitialized">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isInitialized
+        <span class="apidocSignatureSpan">(successCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isInitialized = function (successCallback) {
+  cordova.exec(successCallback, successCallback, bluetoothleName, "isInitialized", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### isInitialized ###
+Determine whether the adapter is initialized. No error callback. Returns true or false
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">isInitialized</span>(isInitialized);
+```
+
+##### Success Return #####
+* status =&gt; isInitialized = true/false
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isLocationEnabled" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isLocationEnabled">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isLocationEnabled
+        <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isLocationEnabled = function (successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "isLocationEnabled", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### isLocationEnabled ###
+Determine if location services are enabled or not. Location Services are required to find devices in Android API 23.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">isLocationEnabled</span>(isLocationEnabledSuccess, isLocationEnabledError);
+```
+
+##### Success #####
+* status =&gt; isLocationEnabled = true/false
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isScanning" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.isScanning">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>isScanning
+        <span class="apidocSignatureSpan">(successCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isScanning = function (successCallback) {
+  cordova.exec(successCallback, successCallback, bluetoothleName, "isScanning", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### isScanning ###
+Determine whether the adapter is initialized. No error callback. Returns true or false
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">isScanning</span>(isScanning);
+```
+
+##### Return #####
+* status =&gt; isScanning = true/false
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.mtu" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.mtu">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>mtu
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mtu = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "mtu", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+
+### mtu ###
+Set MTU of a connected device. Android only.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">mtu</span>(mtuSuccess, mtuError, params);
+```
+
+#### Params ####
+* address = The address/identifier provided by the scan's return object
+* mtu - Integer value mtu should be set to
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.notify" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.notify">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>notify
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notify = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "notify", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+
+### notify ###
+Update a value for a subscription. Currently all subscribed devices will receive update. Device specific updates will be added in
+ the future. If ```sent``` equals false in the return value, you must wait for the ```peripheralManagerIsReadyToUpdateSubscribers
+``` event before sending more updates.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">notify</span>(success, error, params);
+```
+
+##### Params #####
+```javascript
+var params = {
+"service":"1234",
+"characteristic":"ABCD",
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.read" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.read">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>read
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">read = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "read", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### read ###
+Read a particular service's characteristic once.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">read</span>(readSuccess, readError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* service = The service's UUID
+* characteristic = The characteristic's UUID
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.readDescriptor" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.readDescriptor">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>readDescriptor
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">readDescriptor = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "readDescriptor", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.reconnect" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.reconnect">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>reconnect
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reconnect = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "reconnect", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### reconnect ###
+Reconnect to a previously connected Bluetooth device. The app should use a timer to limit the connecting time. If a timeout occurs
+, the reconnection attempt should be canceled using disconnect() or close().
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">reconnect</span>(reconnectSuccess, reconnectError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.removeAllServices" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.removeAllServices">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>removeAllServices
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeAllServices = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "removeAllServices", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+
+### removeAllServices ###
+Remove all services
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">removeAllServices</span>(success, error);
+```
+
+##### Return #####
+```javascript
+{
+  "status":"allServicesRemoved"
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.removeService" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.removeService">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>removeService
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeService = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "removeService", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+
+### removeService ###
+Remove a service.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">removeService</span>(success, error, params);
+```
+
+##### Params #####
+* service = A service UUID.
+
+```javascript
+var params = {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.requestConnectionPriority" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.requestConnectionPriority">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>requestConnectionPriority
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">requestConnectionPriority = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "requestConnectionPriority", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### requestConnectionPriority ###
+Request a change in the connection priority to improve throughput when transfer large amounts of data via BLE. Android support only
+. iOS will return error.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">requestConnectionPriority</span>(success, error, params);
+```
+
+#### Params ####
+* address = The address/identifier provided by the scan's return object
+* connectionPriority = low / balanced / high
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.requestLocation" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.requestLocation">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>requestLocation
+        <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">requestLocation = function (successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "requestLocation", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### requestLocation ###
+Prompt location services settings pages. ```requestLocation``` property returns whether location services are enabled or disabled
+. Location Services are required to find devices in Android API 23.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">requestLocation</span>(requestLocationSuccess, requestLocationError);
+```
+
+##### Success #####
+* status =&gt; requestLocation = true/false
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.requestPermission" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.requestPermission">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>requestPermission
+        <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">requestPermission = function (successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "requestPermission", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### requestPermission ###
+Request coarse location privileges since scanning for unpaired devices requires it in Android API 23. Will return an error if called
+ on iOS or Android versions prior to 6.0.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">requestPermission</span>(requestPermissionSuccess, requestPermissionError);
+```
+
+##### Success #####
+* status =&gt; requestPermission = true/false
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.respond" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.respond">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>respond
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">respond = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "respond", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### respond ###
+Respond to a read or write request
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">respond</span>(success, error, params);
+```
+
+##### Params #####
+```javascript
+//This was a read
+var params = {
+"requestId":0,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.retrieveConnected" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.retrieveConnected">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>retrieveConnected
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">retrieveConnected = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "retrieveConnected", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### retrieveConnected ###
+Retrieved paired Bluetooth LE devices. Yes, this function should be renamed, but I went with iOS's naming. In iOS, devices
+that are "paired" to will not return during a normal scan. Callback is "instant" compared to a scan. I haven
+'t been able to get UUID filtering working on Android, so it returns all paired BLE devices.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">retrieveConnected</span>(retrieveConnectedSuccess, retrieveConnectedError, params
+);
+```
+
+##### Params #####
+* services = An array of service IDs to filter the retrieval by. If no service IDs are specified, no devices will be returned. Ignored
+ on Android
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.rssi" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.rssi">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>rssi
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rssi = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "rssi", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### rssi ###
+Read RSSI of a connected device. RSSI is also returned with scanning.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">rssi</span>(rssiSuccess, rssiError, params);
+```
+
+#### Params ####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.services" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.services">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>services
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">services = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "services", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### services ###
+Discover the device's services. Not providing an array of services will return all services and take longer to discover. iOS
+ support only.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">services</span>(servicesSuccess, servicesError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* services = An array of service IDs to filter the scan or empty array / null
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.startAdvertising" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.startAdvertising">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>startAdvertising
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">startAdvertising = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "startAdvertising", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+### startAdvertising ###
+Start advertising as a BLE device. Note: This needs to be improved so services can be used for both Android and iOS.
+On iOS, the advertising devices likes to rename itself back to the name of the device, i.e. Rand' iPhone
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">startAdvertising</span>(success, error, params);
+```
+
+##### Params #####
+```javascript
+var params = {
+"services":["1234"], //iOS
+"service":"1234", //Android
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.startScan" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.startScan">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>startScan
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">startScan = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "startScan", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### startScan ###
+Scan for Bluetooth LE devices. Since scanning is expensive, stop as soon as possible. The Cordova app should use a timer to limit
+ the scan interval. Also, Android uses an AND operator for filtering, while iOS uses an OR operator. Android API &gt;= 23 requires
+ ACCESS_COARSE_LOCATION permissions to find unpaired devices. Permissions can be requested by using the hasPermission and requestPermission
+ functions. Android API &gt;= 23 also requires location services to be enabled. Use ```isLocationEnabled``` to determine whether
+ location services are enabled. If not enabled, use ```requestLocation``` to prompt the location services settings page.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">startScan</span>(startScanSuccess, startScanError, params);
+```
+
+##### Params #####
+* services = An array of service IDs to filter the scan or empty array / null. This parameter is not supported on Windows platform
+ yet.
+* iOS - See [iOS Docs](https://developer.apple.com/library/ios/documentation/CoreBluetooth/Reference/CBCentralManager_Class/#//apple_ref
+/doc/constant_group/Peripheral_Scanning_Options)
+  * allowDuplicates = True/false to allow duplicate advertisement packets, defaults to false.
+* Android - See [Android Docs](http://developer.android.com/reference/android/bluetooth/le/ScanSettings.html)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.stopAdvertising" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.stopAdvertising">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>stopAdvertising
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stopAdvertising = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "stopAdvertising", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+
+### stopAdvertising ###
+Stop advertising
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">stopAdvertising</span>(success, error);
+```
+
+
+##### Return #####
+```javascript
+{
+"status":"advertisingStopped"
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.stopScan" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.stopScan">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>stopScan
+        <span class="apidocSignatureSpan">(successCallback, errorCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stopScan = function (successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "stopScan", []);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### stopScan ###
+Stop scan for Bluetooth LE devices. Since scanning is expensive, stop as soon as possible. The app should use a timer to limit the
+ scanning time.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">stopScan</span>(stopScanSuccess, stopScanError);
+```
+
+##### Success #####
+* status =&gt; scanStop = Scan has stopped
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.stringToBytes" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.stringToBytes">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>stringToBytes
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stringToBytes = function (string) {
+  var bytes = new ArrayBuffer(string.length * 2);
+  var bytesUint16 = new Uint16Array(bytes);
+  for (var i = 0; i &lt; string.length; i++) {
+    bytesUint16[i] = string.charCodeAt(i);
+  }
+  return new Uint8Array(bytesUint16);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* value = Base64 encoded string
+* type = Set to "noResponse" to enable write without response, all other values will write normally.
+
+Value is a base64 encoded string of bytes to write. Use bluetoothle.bytesToEncodedString(bytes) to convert to base64 encoded string
+ from a unit8Array.
+To write without response, set type to "noResponse". Any other value will default to write with response. Note, no callback
+ will occur on write without response on iOS.
+```javascript
+var string = "Write Hello World";
+var bytes = bluetoothle.<span class="apidocCodeKeywordSpan">stringToBytes</span>(string);
+var encodedString = bluetoothle.bytesToEncodedString(bytes);
+
+//Note, this example doesn't actually work since it's read only characteristic
+{"value":"V3JpdGUgSGVsbG8gV29ybGQ=","service":"180F","characteristic":"2A19
+","type":"noResponse","address":"ABC123"}
+```
+
+##### Success #####
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.subscribe" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.subscribe">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>subscribe
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">subscribe = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "subscribe", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+
+### subscribe ###
+Subscribe to a particular service's characteristic. Once a subscription is no longer needed, execute unsubscribe in a similar
+ fashion. The Client Configuration descriptor will automatically be written to enable notification/indication based on the characteristic
+'s properties.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">subscribe</span>(subscribeSuccess, subscribeError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* service = The service's UUID
+* characteristic = The characteristic's UUID
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.unbond" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.unbond">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>unbond
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unbond = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "unbond", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### unbond ###
+Unbond with a device. The success callback should always return with ```status == unbonded```. The device doesn't need to be
+ connected to initiate bonding. Android support only.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">unbond</span>(unbondSuccess, unbondError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.unsubscribe" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.unsubscribe">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>unsubscribe
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unsubscribe = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "unsubscribe", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### unsubscribe ###
+Unsubscribe to a particular service's characteristic.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">unsubscribe</span>(unsubscribeSuccess, unsubscribeError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* service = The service's UUID
+* characteristic = The characteristic's UUID
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.wasConnected" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.wasConnected">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>wasConnected
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">wasConnected = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "wasConnected", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### wasConnected ###
+Determine whether the device was connected, or error if not initialized.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">wasConnected</span>(wasConnectedSuccess, wasConnectedError, params);
+```
+
+#### Params ####
+* address = The address/identifier provided by the scan's return object
+
+```javascript
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.write" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.write">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>write
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">write = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "write", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### write ###
+Write a particular service's characteristic.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">write</span>(writeSuccess, writeError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* service = The service's UUID
+* characteristic = The characteristic's UUID
+* value = Base64 encoded string
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.writeDescriptor" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.writeDescriptor">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>writeDescriptor
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">writeDescriptor = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "writeDescriptor", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+### writeDescriptor ###
+Write a particular characteristic's descriptor. Unable to write characteristic configuration directly to keep in line with
+iOS implementation. Instead use subscribe/unsubscribe, which will automatically enable/disable notification.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">writeDescriptor</span>(writeDescriptorSuccess, writeDescriptorError, params);
+```
+
+##### Params #####
+* address = The address/identifier provided by the scan's return object
+* service = The service's ID
+* characteristic = The characteristic's ID
+* descriptor = The descriptor's ID
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-bluetoothle.bluetoothle.writeQ" id="apidoc.element.cordova-plugin-bluetoothle.bluetoothle.writeQ">
+        function <span class="apidocSignatureSpan">cordova-plugin-bluetoothle.bluetoothle.</span>writeQ
+        <span class="apidocSignatureSpan">(successCallback, errorCallback, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">writeQ = function (successCallback, errorCallback, params) {
+  cordova.exec(successCallback, errorCallback, bluetoothleName, "writeQ", [params]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Warnings
+* This is experimental. Test heavily before using in any production code.
+* iOS won't see much performance gain, but Android should.
+* Only supports one call at a time. Don't execute back to back, use on multiple devices, or multiple characteristics.
+
+```javascript
+bluetoothle.<span class="apidocCodeKeywordSpan">writeQ</span>(writeSuccess, writeError, params);
+```
+
+##### Params #####
+See write() above.
+
+##### Success #####
+See write() above.
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
