@@ -51,7 +51,7 @@
 
         href="https://github.com/randdusing/cordova-plugin-bluetoothle#readme"
 
-    >cordova-plugin-bluetoothle (v4.3.2)</a>
+    >cordova-plugin-bluetoothle (v4.3.3)</a>
 </h1>
 <h4>Use the Bluetooth Low Energy plugin to connect your Cordova app to new Bluetooth devices like heart rate monitors, thermometers, etc...</h4>
 <div class="apidocSectionDiv"><a
@@ -1530,7 +1530,23 @@ bluetoothle.<span class="apidocCodeKeywordSpan">read</span>(readSuccess, readErr
     <li>description and source-code<pre class="apidocCodePre">readDescriptor = function (successCallback, errorCallback, params) {
   cordova.exec(successCallback, errorCallback, bluetoothleName, &#x22;readDescriptor&#x22;, [params]);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+
+    UUID descriptorUuid = descriptor.getUuid();
+    UUID characteristicUuid = characteristic.getUuid();
+
+    AddDescriptorCallback(descriptorUuid, characteristicUuid, connection, operationRead, callbackContext);
+
+    boolean result = bluetoothGatt.<span class="apidocCodeKeywordSpan">readDescriptor</span>(descriptor);
+
+    if (!result) {
+JSONObject returnObj = new JSONObject();
+
+addDevice(returnObj, device);
+
+addDescriptor(returnObj, descriptor);
+...</pre></li>
     </ul>
 
 
